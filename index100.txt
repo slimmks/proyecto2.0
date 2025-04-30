@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de ejemplo</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .oscuro {
+      background-color: black;
+      color: white;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    a {
+      color: blue;
+      margin: 0 10px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>El Universo y sus Misterios</h1>
+
+  <p>
+    El universo es un vasto e infinito espacio que contiene galaxias, estrellas, planetas y materia oscura. 
+    A pesar de los avances científicos, aún hay mucho que desconocemos sobre su origen y destino. 
+    Explorar el universo nos permite comprender nuestro lugar en él y descubrir maravillas más allá de la imaginación.
+  </p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/NASA-Hubble_Deep_Field.jpg" alt="Imagen del universo">
+
+  <div>
+    <a href="https://es.wikipedia.org/wiki/Universo" target="_blank">Wikipedia</a>
+    <a href="https://www.nasa.gov/" target="_blank">NASA</a>
+  </div>
+
+  <button onclick="cambiarFondo()">Cambiar fondo</button>
+
+  <script>
+    function cambiarFondo() {
+      document.body.classList.toggle('oscuro');
+    }
+  </script>
+</body>
+</html>
